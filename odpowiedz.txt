@@ -1,0 +1,3 @@
+Ostatni commit to:ostatnie szlify formatowania (puste linie)
+3 linii były usunięte
+alt + <- i alt + -> przełącza się pomiędzy gałęziami. W naszym przypadku to master i format
