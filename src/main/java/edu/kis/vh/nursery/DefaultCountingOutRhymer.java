@@ -18,24 +18,24 @@ public class DefaultCountingOutRhymer {
             numbers[++total] = in;
     }
 
-        public boolean callCheck() {
-            return total == EMPTY_RHYMER_INDICATOR;
-        }
-        
-            public boolean isFull() {
-                return total == MAX_SIZE - 1;
-            }
-        
-                protected int returnLast() {
-                    if (callCheck())
-                        return EMPTY_RHYMER_INDICATOR;
-                    return numbers[total];
-                }
-            
-                    public int countOut() {
-                        if (callCheck())
-                            return DEFAULT_VALUE;
-                        return numbers[total--];
-                    }
+    public boolean callCheck() {
+        return total == EMPTY_RHYMER_INDICATOR;
+    }
+
+    public boolean isFull() {
+        return total == MAX_SIZE - 1;
+    }
+
+    protected int returnLast() {
+        if (callCheck())
+            return EMPTY_RHYMER_INDICATOR;
+        return numbers[total];
+    }
+
+    public int countOut() {
+        if (callCheck())
+            return DEFAULT_VALUE;
+        return numbers[total--];
+    }
 
 }
